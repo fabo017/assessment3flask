@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %} Welcome {% endblock %}
+
+{% block content %} 
+
+    <form action="/get-currency" method="GET">
+        <input placeholder="Currency Convert From" id="CurrencyFrom" name="From">
+        
+        <input placeholder="Currency Convert To" id="CurrencyTo" name="To">
+        
+        <input placeholder="Amount To Convert" id="Amount" name="Amount">
+        <button type="submit" id="Convert">Convert</button>
+    </form>
+
+{% endblock %}

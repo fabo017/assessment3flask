@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block title %} Result {% endblock %}
+
+{% block result %} 
+    <p class="result">The result is: {{symbol}}: {{convert}} </p>
+    <form action="/">
+        <button>Home</button>
+    </form>
+
+{% endblock %}
